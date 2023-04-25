@@ -1,0 +1,108 @@
+* {
+  outline: 1px solid orange;
+}
+
+
+.intro {
+  color: dodgerblue;
+  text-shadow: 1px 1px 1px #ebb298;
+  position: fixed;
+  left: 44%;
+  margin-top: 1rem;
+  animation: slideDown 3s infinite;
+  animation-iteration-count: unset;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+#hello-2 {
+  color: dodgerblue;
+  text-shadow: 1px 1px 1px #ebb298;
+  position: fixed;
+  left: 44%;
+  margin-top: 1rem;
+  animation: slideIn 3s infinite;
+  animation-iteration-count: unset;
+  animation-fill-mode: forwards;
+  animation-delay: 4s;
+}
+
+.btn-prompt {
+  color: #efe6e6;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 1px 1px 1px #ebb298;
+  background-color: #1e90ff;
+  /*** "SHIMMER" BUTTON GRADIENT PROPERTIES ***/
+  background-image: linear-gradient(linear, left top, right top, color-stop(0%, #0c0a1e00), color-stop(25%, #0c0a1e00), color-stop(60%, #dbc7c7d9), color-stop(100%, #1e0a0a00));
+  background-image: linear-gradient(120deg, #0c0a1e00 0%, #0c0a1e00 25%, #dbc7c7d9 60%, #0c0a1e00 100%);
+  background-repeat: repeat-y;
+  background-position: center;
+  /*** END "SHIMMER" GRADIENT PROPERTIES (SEE "@keyframes" ***/
+  text-transform: uppercase;
+  border: outset 5px #ebb298c3;
+  border-radius: 50%;
+  box-shadow: inset 3px 6px 10px #daddf2;
+  padding: 1em;
+  padding-block: 2em;
+  object-position: center;
+  animation: shimmer 9s linear infinite;
+}
+
+.btn-prompt:active {
+  color: #c5bebe;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 1px 1px 1px #ebb298;
+  background-color: rgb(25, 116, 207);
+  box-shadow: inset 6px 12px 15px #14172e;
+  border: outset 5px #d8d0cc;
+  text-transform: uppercase;
+  
+}
+.btn-prompt:hover {
+  filter: brightness(120%);
+  transition: .5s;
+
+}
+
+.hidden {
+  visibility: hidden !important;
+}
+
+@keyframes shimmer {
+
+  0% {
+    background-position: -400px 0
+  }
+
+  50% {
+    background-position: -400px 0
+  }
+
+  100% {
+    background-position: 1000px 0
+  }
+}
+
+@keyframes slideDown {
+  from {
+    margin-top: 100%;
+  
+  }
+
+  to {
+    margin-bottom: 45%;
+  
+  }
+}
+
+@keyframes slideIn {
+  from {
+    margin-left: 100%;
+  
+  }
+
+  to {
+    margin-left: 45%;
+  
+  }
+}
